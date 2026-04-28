@@ -4,7 +4,7 @@ Account Policies are a wallet-agnostic onchain mechanism for installing **constr
 
 The protocol is intentionally split into:
 
-* **`PolicyManager`**: a minimal orchestrator that tracks policy instances, verifies policy installation authorization, tracks lifecycle transitions and enforces invariants, and mediates policy execution on user accounts.
+* **`PolicyManager`**: a minimal orchestrator that tracks, verifies policy installation authorization, tracks lifecycle transitions and enforces invariants, and mediates policy execution on user accounts.
     - The `PolicyManager` must be an execution-enabled owner on the user smart contract wallet.
     - This is the core trust anchor: the account delegates execution capability to the manager, and the manager delegates *policy-specific* authorization to policies.
 * **`Policy`**: a minimal hook interface that policy contracts implement to define authorization semantics and build a calldata payload that will serve as the wallet's call plan. 
