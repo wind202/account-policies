@@ -6,7 +6,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Building and Testing
 
-- `forge build` - Compile all Solidity contracts
 - `forge test` - Run all tests with basic verbosity
 - `forge test -vv` - Run tests with increased verbosity (recommended)
 - `forge test -vvvv` - Run tests with maximum verbosity for debugging
